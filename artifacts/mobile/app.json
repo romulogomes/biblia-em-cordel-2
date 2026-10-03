@@ -1,0 +1,55 @@
+{
+  "expo": {
+    "name": "Bíblia em Cordel",
+    "slug": "biblia-em-cordel",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "bibliaemcordel",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "primaryColor": "#A04A2D",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#F9F6EE"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.bibliaemcordel.app",
+      "buildNumber": "1",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false,
+        "CFBundleLocalizations": ["pt-BR", "pt", "en"],
+        "CFBundleDevelopmentRegion": "pt-BR"
+      }
+    },
+    "android": {
+      "package": "com.bibliaemcordel.app",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/icon.png",
+        "backgroundColor": "#F9F6EE"
+      },
+      "permissions": []
+    },
+    "web": {
+      "favicon": "./assets/images/icon.png"
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "origin": "https://replit.com/"
+        }
+      ],
+      "expo-font",
+      "expo-web-browser"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true,
+      "baseUrl": "/web"
+    }
+  }
+}
